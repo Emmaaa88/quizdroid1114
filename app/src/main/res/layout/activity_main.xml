@@ -3,29 +3,62 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity">
+    android:layout_margin="20dp"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Please select the answer"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_content1"
+            android:layout_width="match_parent"
+            android:text="Question:g on earth =?"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"></TextView>
+
+        <RadioGroup
+            android:id="@+id/rg_1"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_1a"
+                android:text="A:8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:id="@+id/rb_1b"
+                android:layout_width="wrap_content"
+                android:text="B:9"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:id="@+id/rb_1c"
+                android:layout_width="wrap_content"
+                android:text="B:10"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:id="@+id/rb_1d"
+                android:layout_width="wrap_content"
+                android:text="B:11"
+                android:layout_height="wrap_content"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
 
 
     <Button
-        android:id="@+id/bt_math"
+        android:id="@+id/bt_submit"
         android:layout_width="wrap_content"
-        android:text="Math"
+        android:text="Submit"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"></Button>
-
-    <Button
-        android:id="@+id/bt_Physics"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Physics"
-        android:layout_height="wrap_content"></Button>
-    <Button
-        android:id="@+id/bt_Marvel_Super_Heroes"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Marvel Super Heroes"
-        android:layout_height="wrap_content"></Button>
-
 </LinearLayout>

@@ -14,8 +14,9 @@ class PhysicsResultActivity : AppCompatActivity() {
         var correct=0;
 
         val selectOne = intent.getIntExtra("selectOne",-1);
+        val select=TopicRepository.instance!!.getSelect()
 
-        if (selectOne==3){
+        if (select==3){
             correct=correct+1
         }
 
