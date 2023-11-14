@@ -13,6 +13,34 @@
         android:theme="@style/Theme.Quizdroid"
         tools:targetApi="31">
         <activity
+            android:name=".MarvelSuperHeroesResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MarvelSuperHeroesStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhysicsResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhysicsStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MathResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MathStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MarvelSuperHeroesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhysicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MathActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
